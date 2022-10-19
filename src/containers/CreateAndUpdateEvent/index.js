@@ -11,9 +11,9 @@ export default function CreateAndUpdateEvent({ onCreate, onUpdate, event }) {
   const [isUpdate, setIsUpdate] = useState(false);
 
   useEffect(() => {
+    setIsUpdate(!!event);
+    
     if (event) {
-      setIsUpdate(!!event);
-
       const { description, date, frequency, title } = event;
       const [day, month, year] = date.split("/");
 

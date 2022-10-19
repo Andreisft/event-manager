@@ -93,8 +93,8 @@ export default function EventManager() {
 
               return event;
             });
-
             setEventList(newEventList);
+            setEvent(null);
           }}
         />
         <EventList
